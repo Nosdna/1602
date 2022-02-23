@@ -17,6 +17,7 @@ app = Flask(__name__)
 
 
 from flask import request, render_template
+from keras.models import load_model
 
 @app.route("/",methods = ["GET","POST"])
 def index():
